@@ -31,7 +31,7 @@ include_graphics('./img/erg-data-trace.png')
 
 ## What are the raw values of this data?
 ```{r  fig.width=10, fig.height=7, warning=FALSE, eval=TRUE, message=FALSE, tidy=TRUE, dev='png', echo=FALSE, fig.show='hold', fig.align='center'}
-source('./r-scripts/plot-group-diffs.r', print.eval = TRUE)
+#source('./r-scripts/plot-group-diffs.r', print.eval = TRUE)
 ```
 
 ## How do the different variable relate to each other?
@@ -44,5 +44,5 @@ Therefore, we can ask questions about the efficiency of neural signalling betwee
 
 ## Correlation between a-wave amplitude and b-wave amplitude
 ```{r  fig.width=10, fig.height=7, warning=FALSE, eval=TRUE, message=FALSE, tidy=TRUE, dev='png', echo=FALSE, fig.show='hold', fig.align='center'}
-source('./r-scripts/plot-all-amplitude-corrs.r', print.eval = TRUE)
+#source('./r-scripts/plot-all-amplitude-corrs.r', print.eval = TRUE)
 ```
