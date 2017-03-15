@@ -1,9 +1,8 @@
 ---
 title: "Summary of ERG data so far"
 output:
-  ioslides_presentation:
-    widescreen: true
-    smaller: true
+  slidy_presentation:
+  dev: 'svg'
 runtime: shiny
 ---
 

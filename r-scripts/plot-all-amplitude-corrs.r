@@ -5,7 +5,6 @@ data %>%
   # rowwise %>% mutate(value = mean(c(iscev, phnr))) %>% select(-iscev, -phnr) %>%
   unite(datacategory, wave, datatype, sep = ".") %>%
   spread(datacategory, value) %>%
-  mutate_cond(group=='control', a.wave.amplitude = 2.1 * a.wave.amplitude + 7) %>%
   ggplot(mapping = aes(x = a.wave.amplitude,
                        y = b.wave.amplitude,
                        colour=group,
