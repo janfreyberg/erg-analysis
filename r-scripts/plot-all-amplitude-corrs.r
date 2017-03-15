@@ -1,4 +1,3 @@
-library(tidyverse)
 
 data %>%
   filter(group != 'adhd') %>%

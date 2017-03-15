@@ -1,14 +1,3 @@
-library(dplyr)
-library(tidyr)
-library(broom)
-library(ggplot2)
-library(stringr)
-
-mutate_cond <- function(.data, condition, ..., envir = parent.frame()) {
-  condition <- eval(substitute(condition), .data, envir)
-  .data[condition, ] <- .data[condition, ] %>% mutate(...)
-  .data
-}
 
 data %>%
   filter(group != 'adhd') %>%

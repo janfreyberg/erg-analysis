@@ -11,8 +11,11 @@ knitr::opts_chunk$set(echo = FALSE)
 library(tidyverse)
 library(magrittr)
 library(broom)
-library(corrr)
 library(knitr)
+library(readr)
+library(ggplot2)
+library(stringr)
+
 source('./r-scripts/mung-data.r')
 ```
 
@@ -27,7 +30,7 @@ include_graphics('./img/erg-data-trace.png')
     + b-wave (bipolar cells)
 
 ## What are the raw values of this data?
-```{r  fig.width=10, fig.height=7, warning=FALSE, eval=TRUE, message=FALSE, tidy=TRUE, echo=FALSE, fig.show='hold', fig.align='center'}
+```{r  fig.width=10, fig.height=7, warning=FALSE, eval=TRUE, message=FALSE, tidy=TRUE, dev='png', echo=FALSE, fig.show='hold', fig.align='center'}
 source('./r-scripts/plot-group-diffs.r', print.eval = TRUE)
 ```
 
@@ -40,6 +43,6 @@ a-wave (photoreceptors) --`glutamate`→ b-wave (bipolar cells)
 Therefore, we can ask questions about the efficiency of neural signalling between these two types of cells by comparing b-wave metrics between the two groups, and by correlating the a-wave and b-wave metrics.
 
 ## Correlation between a-wave amplitude and b-wave amplitude
-```{r  fig.width=10, fig.height=7, warning=FALSE, eval=TRUE, message=FALSE, tidy=TRUE, echo=FALSE, fig.show='hold', fig.align='center'}
+```{r  fig.width=10, fig.height=7, warning=FALSE, eval=TRUE, message=FALSE, tidy=TRUE, dev='png', echo=FALSE, fig.show='hold', fig.align='center'}
 source('./r-scripts/plot-all-amplitude-corrs.r', print.eval = TRUE)
 ```

@@ -1,6 +1,3 @@
-library(dplyr)
-library(tidyr)
-library(readr)
 
 # Find latest file
 current.file <- tail(list.files(pattern='*.csv'), n=1)
