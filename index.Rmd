@@ -1,6 +1,9 @@
 ---
 title: "Summary of ERG data so far"
-output: slidy_presentation
+output:
+  ioslides_presentation:
+    widescreen: true
+    smaller: true
 runtime: shiny
 ---
 
@@ -18,7 +21,7 @@ source('./r-scripts/mung-data.r')
 ```
 
 ## What data I'm using so far
-```{r, out.width="600px", warning=FALSE, eval=TRUE, message=FALSE, tidy=TRUE, dev='png', echo=FALSE, fig.show='hold', fig.align='center'}
+```{r, out.width="500px", warning=FALSE, eval=TRUE, message=FALSE, tidy=TRUE, dev='png', echo=FALSE, fig.show='hold', fig.align='center'}
 include_graphics('./img/erg-data-trace.png')
 ```
 
@@ -29,7 +32,7 @@ include_graphics('./img/erg-data-trace.png')
 
 ## What are the raw values of this data?
 ```{r  fig.width=10, fig.height=7, warning=FALSE, eval=TRUE, message=FALSE, tidy=TRUE, dev='png', echo=FALSE, fig.show='hold', fig.align='center'}
-#source('./r-scripts/plot-group-diffs.r', print.eval = TRUE)
+source('./r-scripts/plot-group-diffs.r', print.eval = TRUE)
 ```
 
 ## How do the different variable relate to each other?
@@ -42,5 +45,5 @@ Therefore, we can ask questions about the efficiency of neural signalling betwee
 
 ## Correlation between a-wave amplitude and b-wave amplitude
 ```{r  fig.width=10, fig.height=7, warning=FALSE, eval=TRUE, message=FALSE, tidy=TRUE, dev='png', echo=FALSE, fig.show='hold', fig.align='center'}
-#source('./r-scripts/plot-all-amplitude-corrs.r', print.eval = TRUE)
+source('./r-scripts/plot-all-amplitude-corrs.r', print.eval = TRUE)
 ```
