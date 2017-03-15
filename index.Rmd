@@ -1,8 +1,6 @@
 ---
 title: "Summary of ERG data so far"
-output:
-  slidy_presentation:
-    dev: png
+output: slidy_presentation
 runtime: shiny
 ---
 
